@@ -25,10 +25,10 @@ class CoffeeScript extends Wrapper
 
     public function fallback()
     {
-        return PhpCoffeeScriptEngine::compile($this->getSource(), array(
+        return PhpCoffeeScriptEngine::compile($this->getSource(), [
             'filename' => basename($this->getPath('source.coffee')),
             'bare'     => $this->bare,
             'header'   => false,
-        ));
+        ]);
     }
 }

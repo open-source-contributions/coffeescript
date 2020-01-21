@@ -1,6 +1,7 @@
 <?php
 
 use NodejsPhpFallback\CoffeeScript;
+use PHPUnit\Framework\TestCase;
 
 class CoffeeScriptWithoutNode extends CoffeeScript
 {
@@ -9,7 +10,7 @@ class CoffeeScriptWithoutNode extends CoffeeScript
     }
 }
 
-class CoffeeScriptTest extends PHPUnit_Framework_TestCase
+class CoffeeScriptTest extends TestCase
 {
     public function testGetSourceFromRaw()
     {

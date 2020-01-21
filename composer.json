@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "php": ">=7.1",
         "nodejs-php-fallback/nodejs-php-fallback": "^1.2.3",
         "kylekatarnls/coffeescript": "^1.0"
     },
@@ -18,12 +19,11 @@
     },
     "require-dev": {
         "composer/composer": "^1.2",
-        "phpunit/phpunit": ">=4.8 <6.0",
-        "codeclimate/php-test-reporter": "dev-master"
+        "phpunit/phpunit": "^7.0 || ^8.0"
     },
     "autoload": {
-        "psr-0": {
-            "NodejsPhpFallback\\": "src/"
+        "psr-4": {
+            "NodejsPhpFallback\\": "src/NodejsPhpFallback/"
         }
     }
 }
